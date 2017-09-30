@@ -1,4 +1,4 @@
-update=29/09/2017 18:39:49
+update=29/09/2017 22:04:25
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -56,5 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=Foot_Prints_2_Manager_Outputs/2_Manager_Outputs_FootPrints
