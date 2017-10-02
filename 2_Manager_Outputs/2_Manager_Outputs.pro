@@ -1,4 +1,4 @@
-update=29/09/2017 22:04:25
+update=02/10/2017 12:52:12
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,7 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=Foot_Prints_2_Manager_Outputs/2_Manager_Outputs_FootPrints
+LibName31=PCB_OSCILLATOR/Libraries_PCB_OSCILLATOR/Condensadores_Proyecto
+LibName32=PCB_OSCILLATOR/Libraries_PCB_OSCILLATOR/LIBERIA_PCB_OSCILLATOR
+LibName33=PCB_OSCILLATOR/Libraries_PCB_OSCILLATOR/Resistencias_Proyecto
+LibName34=switches
