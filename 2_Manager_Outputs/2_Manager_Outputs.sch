@@ -183,9 +183,9 @@ F 3 "" H 1840 910 50  0001 C CNN
 	1    1840 910 
 	0    -1   -1   0   
 $EndComp
-Text Label 1790 1880 1    60   ~ 0
-SDA
 Text Label 1890 1880 1    60   ~ 0
+SDA
+Text Label 1790 1880 1    60   ~ 0
 SCL
 Text Label 4620 3990 2    60   ~ 0
 SS
