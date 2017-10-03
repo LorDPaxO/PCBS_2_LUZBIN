@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.2)
     (user_trace_width 0.3)
     (user_trace_width 0.35)
     (user_trace_width 0.4)
@@ -75,7 +75,7 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
+      (layerselection 0x3ffff_80000001)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -94,9 +94,9 @@
       (plotinvisibletext false)
       (padsonsilk false)
       (subtractmaskfromsilk false)
-      (outputformat 4)
+      (outputformat 1)
       (mirror false)
-      (drillshape 2)
+      (drillshape 0)
       (scaleselection 1)
       (outputdirectory ""))
   )
@@ -1672,7 +1672,7 @@
   (segment (start 163.82 55.05) (end 161.58 52.81) (width 1) (layer F.Cu) (net 1) (tstamp 59D72EBB))
   (via (at 163.82 55.05) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (segment (start 166.145 52.725) (end 163.82 55.05) (width 1) (layer B.Cu) (net 1) (tstamp 59D72EB9))
-  (segment (start 173.99 56.64) (end 171.17 56.64) (width 1) (layer B.Cu) (net 1) (status 400000))
+  (segment (start 173.99 56.64) (end 171.17 56.64) (width 1) (layer B.Cu) (net 1))
   (segment (start 151.43 35.42) (end 151.49 35.36) (width 1) (layer F.Cu) (net 1) (tstamp 59D2B819))
   (via (at 151.49 35.36) (size 0.8) (drill 0.5) (layers F.Cu B.Cu) (net 1))
   (segment (start 151.43 35.42) (end 151.43 37.02) (width 1) (layer F.Cu) (net 1))
