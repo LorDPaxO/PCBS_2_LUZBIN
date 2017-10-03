@@ -1,4 +1,4 @@
-update=29/09/2017 22:04:25
+update=02/10/2017 19:28:45
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=Foot_Prints_2_Manager_Outputs/2_Manager_Outputs_FootPrints
+LibName31=switches
