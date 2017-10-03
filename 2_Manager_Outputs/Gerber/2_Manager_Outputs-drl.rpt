@@ -1,5 +1,5 @@
-Drill report for C:/Users/USUARIO/Documents/GitHub/PCBS_2_LUZBIN/2_Manager_Outputs/2_Manager_Outputs.kicad_pcb
-Created on 03/10/2017 7:00:41
+Drill report for C:\Users\USUARIO\Documents\GitHub\PCBS_2_LUZBIN\2_Manager_Outputs\2_Manager_Outputs.kicad_pcb
+Created on 03/10/2017 8:09:56
 
 Copper Layer Stackup:
     =============================================================
@@ -10,12 +10,13 @@ Copper Layer Stackup:
 Drill file '2_Manager_Outputs.drl' contains
     plated through holes:
     =============================================================
-    T1  0,40mm  0,016"  (14 holes)
-    T2  0,50mm  0,020"  (11 holes)
-    T3  1,02mm  0,040"  (85 holes)
-    T4  1,80mm  0,071"  (8 holes)
+    T1  0,40mm  0,016"  (600 holes)
+    T2  0,50mm  0,020"  (14 holes)
+    T3  0,80mm  0,031"  (500 holes)
+    T4  1,02mm  0,040"  (85 holes)
+    T5  1,80mm  0,071"  (8 holes)
 
-    Total plated holes count 118
+    Total plated holes count 1207
 
 
 Drill file '2_Manager_Outputs-NPTH.drl' contains
