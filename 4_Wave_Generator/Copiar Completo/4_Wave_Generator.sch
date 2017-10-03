@@ -1,0 +1,2486 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:2_Manager_Outputs-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "CIRCUITO PARA LA MONITORIZACION DE ECG"
+Date "2017-04-08"
+Rev "V1.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L AD9833 U?
+U 1 1 59D306B1
+P 9700 4720
+F 0 "U?" H 9680 4990 60  0000 C CNN
+F 1 "AD9833" H 9670 4590 60  0000 C CNN
+F 2 "Housings_SSOP:MSOP-10_3x3mm_Pitch0.5mm" H 9500 4750 60  0001 C CNN
+F 3 "" H 9500 4750 60  0000 C CNN
+	1    9700 4720
+	1    0    0    -1  
+$EndComp
+Text Label 9610 5590 1    60   ~ 0
+GND
+Text Label 9780 5580 1    60   ~ 0
+GND
+Text Label 10610 4490 0    60   ~ 0
+VDD
+Text Label 9930 3990 1    60   ~ 0
+VDD
+Text Label 10320 4250 0    60   ~ 0
+GND
+Text Label 8940 3820 0    60   ~ 0
+GND
+Text Label 8420 4540 0    60   ~ 0
+SCLK_DDS_1
+Text Label 8420 4650 0    60   ~ 0
+SDATA_DDS_1
+Text Label 8420 4760 0    60   ~ 0
+FSYNK_DDS_1
+Text Label 10570 5360 0    60   ~ 0
+GND
+Text Notes 7920 3560 0    60   ~ 0
+GENERATOR SIGNAL (DDS_1 X00KHz)\n
+Text Label 7980 8740 0    60   ~ 0
+VDD
+Text Label 8080 9090 2    60   ~ 0
+GND
+Text Label 9710 9030 2    60   ~ 0
+GND
+Text Label 10050 8740 2    60   ~ 0
+MCLK_DDS_1
+Text Label 8010 5170 0    60   ~ 0
+MCLK_DDS_1
+Text Notes 8070 8390 0    60   ~ 0
+OSCILLATORS
+Text Notes 8690 8610 0    60   ~ 0
+CLOK_DDS_1
+$Comp
+L AD8421 U?
+U 1 1 59D306B2
+P 9300 7020
+F 0 "U?" H 9080 7330 60  0000 C CNN
+F 1 "AD8421" H 9290 6950 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 9130 6720 60  0001 C CNN
+F 3 "" H 9130 6720 60  0000 C CNN
+	1    9300 7020
+	1    0    0    -1  
+$EndComp
+Text Label 9340 6320 3    60   ~ 0
++12V
+Text Label 9340 7720 1    60   ~ 0
+-12V
+Text Label 9560 7970 1    60   ~ 0
+GND
+Text Label 11000 5550 1    60   ~ 0
+WAVE_DDS_1
+Text Label 8180 6830 0    60   ~ 0
+WAVE_DDS_1
+Text Label 8600 7430 1    60   ~ 0
+GND
+Text Label 9480 6220 0    60   ~ 0
+GND
+Text Label 9150 7900 2    60   ~ 0
+GND
+Text Notes 7890 6240 0    60   ~ 0
+GAIN VARIABLE\nAMPLIFIER_1
+Text Label 7930 6980 0    60   ~ 0
+A_AD5270_1
+Text Label 7930 7080 0    60   ~ 0
+W_AD5270_1
+Text Label 11220 8630 3    60   ~ 0
+GND
+Text Notes 8880 6150 0    60   ~ 0
+AD8421_1
+Text Label 10310 7830 1    60   ~ 0
+BASE_WAVE
+Text Label 10820 4950 0    60   ~ 0
+BASE_WAVE
+Text Label 11800 9730 1    60   ~ 0
+GND
+Text Label 11800 8380 3    60   ~ 0
+VDD
+Text Label 12310 8420 2    60   ~ 0
+GND
+Text Notes 10590 8340 0    60   ~ 0
+MULTIPLEXER
+Text Label 12640 9800 1    60   ~ 0
+MODULATED_WAVE
+Text Label 5980 -520 1    60   ~ 0
+VDD_F
+Text Label 6180 -520 1    60   ~ 0
+GND
+Text Label 7730 -1080 0    60   ~ 0
+VDD_F
+Text Label 8910 -1080 2    60   ~ 0
+GND
+Text Label 7730 -810 0    60   ~ 0
++12V
+Text Label 8920 -810 2    60   ~ 0
+GND
+Text Label 7730 -550 0    60   ~ 0
+GND
+Text Label 8910 -550 2    60   ~ 0
+-12V
+Text Notes 5820 -1120 0    60   ~ 0
+POWER SUPPLIES
+$Comp
+L 0.01uF C?
+U 1 1 59D306B3
+P 10480 4490
+F 0 "C?" H 10490 4560 50  0000 L CNN
+F 1 "0.01uF" H 10490 4410 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10390 4460 50  0001 C CNN
+F 3 "" H 10490 4560 50  0001 C CNN
+F 4 "478-1383-2-ND" H 10590 4660 60  0001 C CNN "Digi-Key Part Number"
+	1    10480 4490
+	0    1    1    0   
+$EndComp
+$Comp
+L 0.1uF C?
+U 1 1 59D306B4
+P 9260 3980
+F 0 "C?" H 9270 4050 50  0000 L CNN
+F 1 "0.1uF" H 9270 3900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9170 3950 50  0001 C CNN
+F 3 "" H 9270 4050 50  0001 C CNN
+F 4 "478-1395-2-ND" H 9370 4150 60  0001 C CNN "Digi-Key Part Number"
+	1    9260 3980
+	0    1    1    0   
+$EndComp
+$Comp
+L 0.1uF C?
+U 1 1 59D306B5
+P 10320 4040
+F 0 "C?" H 10330 4110 50  0000 L CNN
+F 1 "0.1uF" H 10330 3960 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10230 4010 50  0001 C CNN
+F 3 "" H 10330 4110 50  0001 C CNN
+F 4 "478-1395-2-ND" H 10430 4210 60  0001 C CNN "Digi-Key Part Number"
+	1    10320 4040
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0.1uF C?
+U 1 1 59D306B6
+P 9480 6390
+F 0 "C?" H 9490 6460 50  0000 L CNN
+F 1 "0.1uF" V 9430 6440 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9390 6360 50  0001 C CNN
+F 3 "" H 9490 6460 50  0001 C CNN
+F 4 "478-1395-2-ND" H 9590 6560 60  0001 C CNN "Digi-Key Part Number"
+	1    9480 6390
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0.1uF C?
+U 1 1 59D306B7
+P 9150 7730
+F 0 "C?" H 9160 7800 50  0000 L CNN
+F 1 "0.1uF" H 9160 7650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9060 7700 50  0001 C CNN
+F 3 "" H 9160 7800 50  0001 C CNN
+F 4 "478-1395-2-ND" H 9260 7900 60  0001 C CNN "Digi-Key Part Number"
+	1    9150 7730
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0.1uF C?
+U 1 1 59D306B8
+P 8080 8890
+F 0 "C?" H 8090 8960 50  0000 L CNN
+F 1 "0.1uF" H 7870 8810 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7990 8860 50  0001 C CNN
+F 3 "" H 8090 8960 50  0001 C CNN
+F 4 "478-1395-2-ND" H 8190 9060 60  0001 C CNN "Digi-Key Part Number"
+	1    8080 8890
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0.1uF C?
+U 1 1 59D306B9
+P 11970 8420
+F 0 "C?" H 11980 8490 50  0000 L CNN
+F 1 "0.1uF" H 11980 8340 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 11880 8390 50  0001 C CNN
+F 3 "" H 11980 8490 50  0001 C CNN
+F 4 "478-1395-2-ND" H 12080 8590 60  0001 C CNN "Digi-Key Part Number"
+	1    11970 8420
+	0    1    1    0   
+$EndComp
+$Comp
+L 10uF C?
+U 1 1 59D306BA
+P 9260 3700
+F 0 "C?" H 9270 3770 50  0000 L CNN
+F 1 "10uF" V 9210 3750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9170 3670 50  0001 C CNN
+F 3 "" H 9270 3770 50  0001 C CNN
+F 4 "490-5523-2-ND" H 9370 3870 60  0001 C CNN "25V"
+	1    9260 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L 10uF C?
+U 1 1 59D306BB
+P 9650 6390
+F 0 "C?" H 9660 6460 50  0000 L CNN
+F 1 "10uF" H 9660 6310 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 9560 6360 50  0001 C CNN
+F 3 "" H 9660 6460 50  0001 C CNN
+F 4 "478-8235-2-ND" H 9760 6560 60  0001 C CNN "CAP TANT 10UF 16V 10% 1206"
+	1    9650 6390
+	1    0    0    -1  
+$EndComp
+$Comp
+L 10uF C?
+U 1 1 59D306BC
+P 8980 7730
+F 0 "C?" H 8990 7800 50  0000 L CNN
+F 1 "10uF" H 8990 7650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 8890 7700 50  0001 C CNN
+F 3 "" H 8990 7800 50  0001 C CNN
+F 4 "478-8235-2-ND" H 9090 7900 60  0001 C CNN "CAP TANT 10UF 16V 10% 1206"
+	1    8980 7730
+	-1   0    0    1   
+$EndComp
+$Comp
+L 20pF C?
+U 1 1 59D306BD
+P 10570 5130
+F 0 "C?" H 10580 5200 50  0000 L CNN
+F 1 "20pF" H 10580 5050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10480 5100 50  0001 C CNN
+F 3 "" H 10580 5200 50  0001 C CNN
+F 4 "478-3735-2-ND" H 10680 5300 60  0001 C CNN "100V"
+	1    10570 5130
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1K R?
+U 1 1 59D306BE
+P 8490 -1080
+F 0 "R?" H 8520 -1060 50  0000 L CNN
+F 1 "1K" H 8520 -1120 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 8420 -1160 50  0001 C CNN
+F 3 "" H 8520 -1060 50  0000 C CNN
+F 4 "P21019TR-ND" H 8620 -960 60  0001 C CNN "RES SMD 1K OHM 0.5% 1/4W 0805"
+	1    8490 -1080
+	0    1    1    0   
+$EndComp
+$Comp
+L 1K R?
+U 1 1 59D306BF
+P 8490 -810
+F 0 "R?" H 8520 -790 50  0000 L CNN
+F 1 "1K" H 8520 -850 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 8420 -890 50  0001 C CNN
+F 3 "" H 8520 -790 50  0000 C CNN
+F 4 "P21019TR-ND" H 8620 -690 60  0001 C CNN "RES SMD 1K OHM 0.5% 1/4W 0805"
+	1    8490 -810
+	0    1    1    0   
+$EndComp
+$Comp
+L 1K R?
+U 1 1 59D306C0
+P 8490 -550
+F 0 "R?" H 8520 -530 50  0000 L CNN
+F 1 "1K" H 8520 -590 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 8420 -630 50  0001 C CNN
+F 3 "" H 8520 -530 50  0000 C CNN
+F 4 "P21019TR-ND" H 8620 -430 60  0001 C CNN "RES SMD 1K OHM 0.5% 1/4W 0805"
+	1    8490 -550
+	0    1    1    0   
+$EndComp
+$Comp
+L Led_0805 D?
+U 1 1 59D306C1
+P 8130 -1080
+F 0 "D?" H 8010 -1040 50  0000 L CNN
+F 1 "Led_0805" H 7955 -1180 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7980 -1055 50  0001 C CNN
+F 3 "" H 8080 -955 50  0000 C CNN
+F 4 "475-1410-2-ND" H 8180 -855 60  0001 C CNN "Digi-Key Part Number"
+	1    8130 -1080
+	-1   0    0    1   
+$EndComp
+$Comp
+L Led_0805 D?
+U 1 1 59D306C2
+P 8130 -810
+F 0 "D?" H 8010 -770 50  0000 L CNN
+F 1 "Led_0805" H 7955 -910 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7980 -785 50  0001 C CNN
+F 3 "" H 8080 -685 50  0000 C CNN
+F 4 "475-1410-2-ND" H 8180 -585 60  0001 C CNN "Digi-Key Part Number"
+	1    8130 -810
+	-1   0    0    1   
+$EndComp
+$Comp
+L Led_0805 D?
+U 1 1 59D306C3
+P 8120 -550
+F 0 "D?" H 8000 -510 50  0000 L CNN
+F 1 "Led_0805" H 7945 -650 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7970 -525 50  0001 C CNN
+F 3 "" H 8070 -425 50  0000 C CNN
+F 4 "475-1410-2-ND" H 8170 -325 60  0001 C CNN "Digi-Key Part Number"
+	1    8120 -550
+	-1   0    0    1   
+$EndComp
+$Comp
+L KC5032A CLK?
+U 1 1 59D306C4
+P 8930 8880
+F 0 "CLK?" H 8930 9080 60  0000 C CNN
+F 1 "KC5032A" H 8930 8880 60  0000 C CNN
+F 2 "Foot_Prints_PCB_OSCILLATOR:KC5032A_Foot_Print" H 8870 8890 60  0001 C CNN
+F 3 "" H 8870 8890 60  0000 C CNN
+F 4 "1253-1043-2-ND" H 9030 9180 60  0001 C CNN "OSC XO 25.000MHZ CMOS SMD"
+	1    8930 8880
+	1    0    0    -1  
+$EndComp
+NoConn ~ 12150 8980
+NoConn ~ 12150 9090
+$Comp
+L 0.1uF C?
+U 1 1 59D306C5
+P 7070 -790
+F 0 "C?" H 7080 -720 50  0000 L CNN
+F 1 "0.1uF" H 7080 -870 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6980 -820 50  0001 C CNN
+F 3 "" H 7080 -720 50  0001 C CNN
+F 4 "478-1395-2-ND" H 7180 -620 60  0001 C CNN "Digi-Key Part Number"
+	1    7070 -790
+	1    0    0    -1  
+$EndComp
+$Comp
+L 10uF C?
+U 1 1 59D306C6
+P 7360 -790
+F 0 "C?" H 7370 -720 50  0000 L CNN
+F 1 "10uF" H 7370 -870 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7270 -820 50  0001 C CNN
+F 3 "" H 7370 -720 50  0001 C CNN
+F 4 "490-5523-2-ND" H 7470 -620 60  0001 C CNN "25V"
+	1    7360 -790
+	1    0    0    -1  
+$EndComp
+Text Label 7320 -530 2    60   ~ 0
+GND
+Text Label 7120 -1060 0    60   ~ 0
+VDD_F
+$Comp
+L Jumper-RESCUE-PCB_OSCILLATOR J?
+U 1 1 59D306C7
+P 8580 6980
+F 0 "J?" V 8540 7040 50  0000 L CNN
+F 1 "Jumper" H 8610 6940 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8510 6900 50  0001 C CNN
+F 3 "" H 8580 6980 50  0000 C CNN
+	1    8580 6980
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper-RESCUE-PCB_OSCILLATOR J?
+U 1 1 59D306C8
+P 8580 7080
+F 0 "J?" V 8550 7150 50  0000 L CNN
+F 1 "Jumper" H 8610 7040 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8510 7000 50  0001 C CNN
+F 3 "" H 8580 7080 50  0000 C CNN
+	1    8580 7080
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper-RESCUE-PCB_OSCILLATOR J?
+U 1 1 59D306C9
+P 10040 7050
+F 0 "J?" V 10010 7140 50  0000 L CNN
+F 1 "Jumper" H 10070 7010 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 9970 6970 50  0001 C CNN
+F 3 "" H 10040 7050 50  0000 C CNN
+	1    10040 7050
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper-RESCUE-PCB_OSCILLATOR J?
+U 1 1 59D306CA
+P 10820 4950
+F 0 "J?" V 10790 5040 50  0000 L CNN
+F 1 "Jumper" H 10850 4910 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 10750 4870 50  0001 C CNN
+F 3 "" H 10820 4950 50  0000 C CNN
+	1    10820 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper-RESCUE-PCB_OSCILLATOR J?
+U 1 1 59D306CB
+P 12310 8850
+F 0 "J?" V 12280 8940 50  0000 L CNN
+F 1 "Jumper" H 12340 8810 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 12240 8770 50  0001 C CNN
+F 3 "" H 12310 8850 50  0000 C CNN
+	1    12310 8850
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper-RESCUE-PCB_OSCILLATOR J?
+U 1 1 59D306CC
+P 8770 5170
+F 0 "J?" V 8740 5240 50  0000 L CNN
+F 1 "Jumper" H 8800 5130 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8700 5090 50  0001 C CNN
+F 3 "" H 8770 5170 50  0000 C CNN
+	1    8770 5170
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper-RESCUE-PCB_OSCILLATOR J?
+U 1 1 59D306CD
+P 8770 4990
+F 0 "J?" V 8740 5060 50  0000 L CNN
+F 1 "Jumper" H 8800 4950 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8700 4910 50  0001 C CNN
+F 3 "" H 8770 4990 50  0000 C CNN
+	1    8770 4990
+	0    1    1    0   
+$EndComp
+Text Notes 10410 3620 0    60   ~ 0
+Power supply\n2.3 V to 5.5 V
+Text Notes 10500 9420 0    60   ~ 0
+adecuar salida del DD_S
+Text Notes 9760 6240 0    60   ~ 0
+Dual supply\n±2.5 V to ±18 V
+Text Notes 9540 8450 0    60   ~ 0
+Power supply\n1.8V to 5.0V
+Text Notes 12200 8370 0    60   ~ 0
+Power supply\n1.8 V to 5.5 V
+Text Notes 7800 5620 0    60   ~ 0
+Imax 5.5[mA]
+Text Notes 7870 7990 0    60   ~ 0
+Imax 2.3[mA]
+Text Notes 7850 9580 0    60   ~ 0
+Imax 6[mA]
+Text Notes 10520 9830 0    60   ~ 0
+Imax 1[uA]
+Text Label 10520 9210 0    60   ~ 0
+MODULATING_WAVE
+Wire Wire Line
+	8420 4540 9030 4540
+Wire Wire Line
+	8420 4650 9030 4650
+Wire Wire Line
+	8420 4760 9030 4760
+Wire Wire Line
+	9780 5460 9780 5640
+Wire Wire Line
+	9610 5460 9610 5640
+Wire Wire Line
+	10380 4490 10340 4490
+Wire Wire Line
+	10580 4490 10710 4490
+Wire Wire Line
+	9930 3830 9930 4040
+Wire Wire Line
+	10320 3900 10320 3940
+Wire Wire Line
+	10320 3900 9930 3900
+Connection ~ 9930 3900
+Wire Wire Line
+	10320 4140 10320 4250
+Wire Wire Line
+	9360 3700 9530 3700
+Wire Wire Line
+	9530 3700 9530 4040
+Wire Wire Line
+	9360 3980 9530 3980
+Connection ~ 9530 3980
+Wire Wire Line
+	9100 3980 9160 3980
+Wire Wire Line
+	9100 3700 9100 3980
+Wire Wire Line
+	9100 3700 9160 3700
+Wire Wire Line
+	9100 3820 8940 3820
+Connection ~ 9100 3820
+Wire Wire Line
+	10570 5030 10570 4950
+Connection ~ 10570 4950
+Wire Wire Line
+	10570 5230 10570 5360
+Wire Notes Line
+	7760 5680 11090 5680
+Wire Notes Line
+	11090 5680 11090 3420
+Wire Notes Line
+	11090 3420 8210 3420
+Wire Wire Line
+	7980 8740 8390 8740
+Wire Wire Line
+	9500 8740 10050 8740
+Wire Wire Line
+	9500 9030 9710 9030
+Wire Wire Line
+	8310 9030 8390 9030
+Connection ~ 8310 8740
+Wire Wire Line
+	8080 8790 8080 8740
+Connection ~ 8080 8740
+Wire Wire Line
+	8080 8990 8080 9090
+Wire Wire Line
+	9030 5060 8960 5060
+Wire Wire Line
+	8870 4990 8960 4990
+Wire Wire Line
+	8960 4990 8960 5170
+Wire Wire Line
+	8960 5170 8870 5170
+Connection ~ 8960 5060
+Wire Wire Line
+	8010 5170 8670 5170
+Wire Notes Line
+	7760 5680 7760 3420
+Wire Notes Line
+	7760 3420 8220 3420
+Wire Notes Line
+	7800 8250 10180 8250
+Wire Wire Line
+	9340 6320 9340 6550
+Wire Wire Line
+	9340 7550 9340 7720
+Wire Wire Line
+	9560 7800 9560 7970
+Wire Wire Line
+	10340 4950 10720 4950
+Wire Wire Line
+	10920 4950 11000 4950
+Wire Wire Line
+	11000 4950 11000 5550
+Wire Wire Line
+	9940 7050 9850 7050
+Wire Wire Line
+	10140 7050 10310 7050
+Wire Wire Line
+	8740 6830 8180 6830
+Wire Wire Line
+	8740 7240 8600 7240
+Wire Wire Line
+	8600 7240 8600 7430
+Wire Wire Line
+	8680 6980 8740 6980
+Wire Wire Line
+	8740 7080 8680 7080
+Wire Wire Line
+	7930 6980 8480 6980
+Wire Wire Line
+	7930 7080 8480 7080
+Wire Wire Line
+	9650 6530 9650 6490
+Wire Wire Line
+	9340 6530 9650 6530
+Connection ~ 9340 6530
+Wire Wire Line
+	9480 6490 9480 6530
+Connection ~ 9480 6530
+Wire Wire Line
+	9480 6290 9480 6220
+Wire Wire Line
+	9480 6220 9650 6220
+Wire Wire Line
+	9650 6220 9650 6290
+Wire Wire Line
+	9150 7830 9150 7900
+Wire Wire Line
+	9150 7900 8980 7900
+Wire Wire Line
+	8980 7900 8980 7830
+Wire Wire Line
+	8980 7630 8980 7570
+Wire Wire Line
+	8980 7570 9340 7570
+Connection ~ 9340 7570
+Wire Wire Line
+	9150 7630 9150 7570
+Connection ~ 9150 7570
+Wire Notes Line
+	7830 6030 10580 6030
+Wire Notes Line
+	8030 8040 10580 8040
+Wire Notes Line
+	7830 8040 8040 8040
+Wire Notes Line
+	7830 6030 7830 8040
+Wire Wire Line
+	11800 8380 11800 8520
+Wire Wire Line
+	11800 9520 11800 9730
+Wire Wire Line
+	12210 8850 12150 8850
+Wire Wire Line
+	10650 8960 11350 8960
+Wire Wire Line
+	10520 9210 11350 9210
+Wire Wire Line
+	10310 7050 10310 7830
+Wire Wire Line
+	11350 8850 11220 8850
+Wire Wire Line
+	11220 8850 11220 8630
+Wire Wire Line
+	11870 8420 11800 8420
+Connection ~ 11800 8420
+Wire Wire Line
+	12070 8420 12310 8420
+Wire Notes Line
+	10480 8190 10480 9890
+Wire Notes Line
+	10480 9890 12890 9890
+Wire Notes Line
+	12890 9890 12890 8190
+Wire Notes Line
+	12890 8190 10480 8190
+Wire Wire Line
+	12410 8850 12640 8850
+Wire Wire Line
+	12640 8850 12640 9800
+Wire Wire Line
+	5980 -740 5980 -520
+Wire Wire Line
+	6180 -740 6180 -520
+Wire Notes Line
+	5810 -1230 5810 -370
+Wire Wire Line
+	7730 -1080 8030 -1080
+Wire Wire Line
+	8230 -1080 8390 -1080
+Wire Wire Line
+	8590 -1080 8910 -1080
+Wire Wire Line
+	7730 -810 8030 -810
+Wire Wire Line
+	8230 -810 8390 -810
+Wire Wire Line
+	8590 -810 8920 -810
+Wire Wire Line
+	7730 -550 8020 -550
+Wire Wire Line
+	8220 -550 8390 -550
+Wire Wire Line
+	8590 -550 8910 -550
+Wire Wire Line
+	7070 -890 7070 -1060
+Wire Wire Line
+	7070 -1060 7360 -1060
+Wire Wire Line
+	7360 -1060 7360 -890
+Wire Wire Line
+	7360 -690 7360 -530
+Wire Wire Line
+	7360 -530 7070 -530
+Wire Wire Line
+	7070 -530 7070 -690
+Wire Notes Line
+	10580 8040 10580 6030
+$Comp
+L Jumper-RESCUE-PCB_OSCILLATOR J?
+U 1 1 59D306CE
+P 8310 8890
+F 0 "J?" H 8340 8910 50  0000 L CNN
+F 1 "Jumper" H 8340 8850 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8240 8810 50  0001 C CNN
+F 3 "" H 8310 8890 50  0000 C CNN
+	1    8310 8890
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8310 8990 8310 9070
+Wire Wire Line
+	8310 8790 8310 8740
+Wire Wire Line
+	9560 7550 9560 7600
+$Comp
+L ADG819 U?
+U 1 1 59D306CF
+P 11750 9050
+F 0 "U?" H 11610 9430 60  0000 C CNN
+F 1 "ADG819" H 11760 9050 60  0000 C CNN
+F 2 "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm" H 11510 9330 60  0001 C CNN
+F 3 "" H 11750 9050 60  0000 C CNN
+	1    11750 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 10K R?
+U 1 1 59D306D0
+P 8310 9170
+F 0 "R?" H 8340 9190 50  0000 L CNN
+F 1 "10K" H 8340 9130 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 8240 9090 50  0001 C CNN
+F 3 "" H 8340 9190 50  0000 C CNN
+F 4 "311-10KARTR-ND" H 8440 9290 60  0001 C CNN "RES SMD 10K OHM 5% 1/8W 0805"
+	1    8310 9170
+	-1   0    0    1   
+$EndComp
+Connection ~ 8310 9030
+Wire Wire Line
+	8310 9270 8310 9390
+Text Label 8310 9390 2    60   ~ 0
+GND
+$Comp
+L CONN_01X01 P?
+U 1 1 59D306D1
+P 8080 4790
+F 0 "P?" H 8080 4890 50  0000 C CNN
+F 1 "MCLK_EXTERNAL" V 8180 4790 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 8080 4790 50  0001 C CNN
+F 3 "" H 8080 4790 50  0000 C CNN
+	1    8080 4790
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8670 4990 8080 4990
+$Comp
+L Jumper-RESCUE-PCB_OSCILLATOR J?
+U 1 1 59D306D2
+P 9560 7700
+F 0 "J?" H 9590 7720 50  0000 L CNN
+F 1 "Jumper" H 9590 7660 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 9490 7620 50  0001 C CNN
+F 3 "" H 9560 7700 50  0000 C CNN
+	1    9560 7700
+	1    0    0    -1  
+$EndComp
+Text Label 10650 8960 0    60   ~ 0
+BASE_WAVE
+$Comp
+L CONN_01X04 P?
+U 1 1 59D306D3
+P 6130 -940
+F 0 "P?" H 6130 -690 50  0000 C CNN
+F 1 "CONN_01X04" V 6230 -940 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 6130 -940 50  0001 C CNN
+F 3 "" H 6130 -940 50  0000 C CNN
+	1    6130 -940
+	0    -1   -1   0   
+$EndComp
+Text Label 6280 -520 1    60   ~ 0
+GND
+Wire Wire Line
+	6280 -740 6280 -520
+Text Label 6080 -520 1    60   ~ 0
+VDD_F
+Wire Wire Line
+	6080 -740 6080 -520
+Wire Wire Line
+	6840 -750 6840 -530
+Text Label 6840 -530 1    60   ~ 0
+-12V
+$Comp
+L CONN_01X04 P?
+U 1 1 59D306D4
+P 6690 -950
+F 0 "P?" H 6690 -700 50  0000 C CNN
+F 1 "CONN_01X04" V 6790 -950 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 6690 -950 50  0001 C CNN
+F 3 "" H 6690 -950 50  0000 C CNN
+	1    6690 -950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6640 -750 6640 -530
+Wire Wire Line
+	6740 -750 6740 -530
+Wire Wire Line
+	6540 -750 6540 -530
+Text Label 6740 -530 1    60   ~ 0
+-12V
+Text Label 6640 -530 1    60   ~ 0
++12V
+Text Label 6540 -530 1    60   ~ 0
++12V
+Wire Notes Line
+	5810 -1230 9030 -1230
+Wire Notes Line
+	9030 -1230 9030 -370
+Wire Notes Line
+	9030 -370 5810 -370
+$Comp
+L ATMEGA328P-AU_MIO U?
+U 1 1 59D306D5
+P 13710 2080
+F 0 "U?" H 12960 3330 50  0000 L BNN
+F 1 "ATMEGA328P-AU_MIO" H 14110 680 50  0000 L BNN
+F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 13750 3350 50  0001 C CIN
+F 3 "" H 13710 2080 50  0001 C CNN
+	1    13710 2080
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	10180 8250 10180 9650
+Wire Notes Line
+	10180 9650 7800 9650
+Wire Notes Line
+	7800 9650 7800 8250
+Wire Wire Line
+	14710 1040 15150 1040
+Wire Wire Line
+	14710 1140 15150 1140
+Wire Wire Line
+	14710 1230 15150 1230
+Wire Wire Line
+	14710 1330 15150 1330
+Wire Wire Line
+	14710 1430 15150 1430
+Wire Wire Line
+	14710 1590 15150 1590
+Wire Wire Line
+	14710 1690 15150 1690
+Wire Wire Line
+	14710 1790 15150 1790
+Wire Wire Line
+	14710 1890 15150 1890
+Wire Wire Line
+	14700 2290 15140 2290
+Wire Wire Line
+	14700 2390 15140 2390
+Wire Wire Line
+	14700 2490 15140 2490
+Wire Wire Line
+	14700 2590 15140 2590
+Wire Wire Line
+	14700 2690 15140 2690
+Wire Wire Line
+	14700 2790 15140 2790
+Wire Wire Line
+	14700 2890 15140 2890
+Wire Wire Line
+	14700 3040 15140 3040
+Wire Wire Line
+	14700 3140 15140 3140
+Wire Wire Line
+	14700 3240 15140 3240
+Wire Wire Line
+	12370 980  12810 980 
+Wire Wire Line
+	12370 1080 12810 1080
+Wire Wire Line
+	12370 1210 12810 1210
+Wire Wire Line
+	12370 1530 12810 1530
+Wire Wire Line
+	12370 1790 12810 1790
+Wire Wire Line
+	12370 1890 12810 1890
+Wire Wire Line
+	12370 2060 12810 2060
+Wire Wire Line
+	12370 2150 12810 2150
+Wire Wire Line
+	12370 2330 12810 2330
+Wire Wire Line
+	12370 2430 12810 2430
+Wire Wire Line
+	12370 3080 12810 3080
+Wire Wire Line
+	12370 3180 12810 3180
+Wire Wire Line
+	12370 3280 12810 3280
+Text Label 15150 1590 2    60   ~ 0
+SS
+Text Label 15150 1690 2    60   ~ 0
+MOSI
+Text Label 15150 1790 2    60   ~ 0
+MISO
+Text Label 15150 1890 2    60   ~ 0
+SCK
+Text Label 12370 2060 0    60   ~ 0
+XTAL1
+Text Label 12370 2150 0    60   ~ 0
+XTAL2
+Text Label 12370 3080 0    60   ~ 0
+GND
+Text Label 12370 3180 0    60   ~ 0
+GND
+Text Label 12370 3280 0    60   ~ 0
+GND
+Text Label 12370 980  0    60   ~ 0
+VDD
+Text Label 12370 1080 0    60   ~ 0
+VDD
+Text Label 12370 1210 0    60   ~ 0
+VDD
+Text Label 15140 2690 2    60   ~ 0
+SDA
+Text Label 15140 2790 2    60   ~ 0
+SCL
+Text Label 15140 2890 2    60   ~ 0
+RESET
+Text Label 15140 3040 2    60   ~ 0
+Rx
+Text Label 15140 3140 2    60   ~ 0
+Tx
+Text Label 3470 -2110 1    60   ~ 0
+SS
+Text Label 3570 -2110 1    60   ~ 0
+MOSI
+Text Label 3670 -2110 1    60   ~ 0
+MISO
+Text Label 3770 -2110 1    60   ~ 0
+SCK
+Text Label 4090 -2100 1    60   ~ 0
+Rx
+Text Label 3990 -2100 1    60   ~ 0
+Tx
+Text Label 4190 -2100 1    60   ~ 0
+GND
+Text Notes 3410 -3280 0    60   ~ 0
+DIGITAL BUSES AND CONNECTORS
+Text Label 6510 -2680 1    60   ~ 0
++12V
+Text Label 6610 -2680 1    60   ~ 0
+GND
+Text Label 7100 -3150 0    60   ~ 0
++12V
+Text Label 8280 -3150 2    60   ~ 0
+GND
+Text Notes 5890 -3290 0    60   ~ 0
+POWER SUPPLIES
+$Comp
+L 1K R?
+U 1 1 59D306D6
+P 7860 -3150
+F 0 "R?" H 7890 -3130 50  0000 L CNN
+F 1 "1K" H 7890 -3190 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7790 -3230 50  0001 C CNN
+F 3 "" H 7890 -3130 50  0000 C CNN
+F 4 "P21019TR-ND" H 7990 -3030 60  0001 C CNN "RES SMD 1K OHM 0.5% 1/4W 0805"
+	1    7860 -3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Led_0805 D?
+U 1 1 59D306D7
+P 7500 -3150
+F 0 "D?" H 7380 -3110 50  0000 L CNN
+F 1 "12V" H 7440 -3230 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7350 -3125 50  0001 C CNN
+F 3 "" H 7450 -3025 50  0000 C CNN
+F 4 "475-1410-2-ND" H 7550 -2925 60  0001 C CNN "Digi-Key Part Number"
+	1    7500 -3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L 0.1uF C?
+U 1 1 59D306D8
+P 5980 -1940
+F 0 "C?" H 5990 -1870 50  0000 L CNN
+F 1 "0.1uF" H 5990 -2020 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5890 -1970 50  0001 C CNN
+F 3 "" H 5990 -1870 50  0001 C CNN
+F 4 "478-1395-2-ND" H 6090 -1770 60  0001 C CNN "Digi-Key Part Number"
+	1    5980 -1940
+	1    0    0    -1  
+$EndComp
+$Comp
+L 10uF C?
+U 1 1 59D306D9
+P 6270 -1940
+F 0 "C?" H 6280 -1870 50  0000 L CNN
+F 1 "10uF" H 6280 -2020 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6180 -1970 50  0001 C CNN
+F 3 "" H 6280 -1870 50  0001 C CNN
+F 4 "490-5523-2-ND" H 6380 -1770 60  0001 C CNN "25V"
+	1    6270 -1940
+	1    0    0    -1  
+$EndComp
+Text Label 6230 -1680 2    60   ~ 0
+GND
+Text Label 6010 -2210 0    60   ~ 0
++12V
+Text Notes 10820 -3020 0    60   ~ 0
+Regulator
+$Comp
+L CONN_01X04 P?
+U 1 1 59D306DA
+P 3620 -3080
+F 0 "P?" H 3620 -2830 50  0000 C CNN
+F 1 "SPI" V 3720 -3080 50  0000 C CNN
+F 2 "Foot_Prints_Manager_Outputs:SPI_CONNECTOR" H 3620 -3080 50  0001 C CNN
+F 3 "" H 3620 -3080 50  0000 C CNN
+	1    3620 -3080
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LD1117S33TR_MIO U?
+U 1 1 59D306DB
+P 12090 -2600
+F 0 "U?" H 12090 -2500 50  0000 C CNN
+F 1 "LD1117S33TR_MIO" H 12090 -2400 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 12090 -2500 50  0001 C CNN
+F 3 "" H 12090 -2600 50  0001 C CNN
+	1    12090 -2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 J?
+U 1 1 59D306DC
+P 4090 -3070
+F 0 "J?" H 4090 -2870 50  0000 C CNN
+F 1 "RS232" V 4190 -3070 50  0000 C CNN
+F 2 "Foot_Prints_Manager_Outputs:RS232" H 4090 -3070 50  0001 C CNN
+F 3 "" H 4090 -3070 50  0001 C CNN
+	1    4090 -3070
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X02 J?
+U 1 1 59D306DD
+P 4480 -3060
+F 0 "J?" H 4480 -2910 50  0000 C CNN
+F 1 "I2C" V 4580 -3060 50  0000 C CNN
+F 2 "Foot_Prints_Manager_Outputs:I2C_2X4" H 4480 -3060 50  0001 C CNN
+F 3 "" H 4480 -3060 50  0001 C CNN
+	1    4480 -3060
+	0    -1   -1   0   
+$EndComp
+Text Label 4530 -2090 1    60   ~ 0
+SDA
+Text Label 4430 -2090 1    60   ~ 0
+SCL
+$Comp
+L 0.1uF C?
+U 1 1 59D306DE
+P 11520 -2470
+F 0 "C?" H 11530 -2400 50  0000 L CNN
+F 1 "0.1uF" H 11530 -2550 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 11430 -2500 50  0001 C CNN
+F 3 "" H 11530 -2400 50  0001 C CNN
+F 4 "478-1395-2-ND" H 11630 -2300 60  0001 C CNN "Digi-Key Part Number"
+	1    11520 -2470
+	1    0    0    -1  
+$EndComp
+$Comp
+L 10uF C?
+U 1 1 59D306DF
+P 12630 -2470
+F 0 "C?" H 12640 -2400 50  0000 L CNN
+F 1 "10uF" H 12640 -2550 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 12540 -2500 50  0001 C CNN
+F 3 "" H 12640 -2400 50  0001 C CNN
+F 4 "490-5523-2-ND" H 12740 -2300 60  0001 C CNN "25V"
+	1    12630 -2470
+	1    0    0    -1  
+$EndComp
+Text Label 12200 -2170 0    60   ~ 0
+GND
+Text Label 7110 -2910 0    60   ~ 0
++5V
+Text Label 8290 -2910 2    60   ~ 0
+GND
+$Comp
+L 1K R?
+U 1 1 59D306E0
+P 7870 -2910
+F 0 "R?" H 7900 -2890 50  0000 L CNN
+F 1 "1K" H 7900 -2950 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7800 -2990 50  0001 C CNN
+F 3 "" H 7900 -2890 50  0000 C CNN
+F 4 "P21019TR-ND" H 8000 -2790 60  0001 C CNN "RES SMD 1K OHM 0.5% 1/4W 0805"
+	1    7870 -2910
+	0    1    1    0   
+$EndComp
+$Comp
+L Led_0805 D?
+U 1 1 59D306E1
+P 7510 -2910
+F 0 "D?" H 7390 -2870 50  0000 L CNN
+F 1 "5V" H 7450 -2990 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7360 -2885 50  0001 C CNN
+F 3 "" H 7460 -2785 50  0000 C CNN
+F 4 "475-1410-2-ND" H 7560 -2685 60  0001 C CNN "Digi-Key Part Number"
+	1    7510 -2910
+	-1   0    0    1   
+$EndComp
+Text Label 10840 -2650 0    60   ~ 0
++12V
+Text Label 13580 -2650 2    60   ~ 0
+VDD
+$Comp
+L 0.1uF C?
+U 1 1 59D306E2
+P 7520 -1980
+F 0 "C?" H 7530 -1910 50  0000 L CNN
+F 1 "0.1uF" H 7530 -2060 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7430 -2010 50  0001 C CNN
+F 3 "" H 7530 -1910 50  0001 C CNN
+F 4 "478-1395-2-ND" H 7630 -1810 60  0001 C CNN "Digi-Key Part Number"
+	1    7520 -1980
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0.1uF C?
+U 1 1 59D306E3
+P 7790 -1980
+F 0 "C?" H 7800 -1910 50  0000 L CNN
+F 1 "0.1uF" H 7800 -2060 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7700 -2010 50  0001 C CNN
+F 3 "" H 7800 -1910 50  0001 C CNN
+F 4 "478-1395-2-ND" H 7900 -1810 60  0001 C CNN "Digi-Key Part Number"
+	1    7790 -1980
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0.1uF C?
+U 1 1 59D306E4
+P 7240 -1980
+F 0 "C?" H 7250 -1910 50  0000 L CNN
+F 1 "0.1uF" H 7250 -2060 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7150 -2010 50  0001 C CNN
+F 3 "" H 7250 -1910 50  0001 C CNN
+F 4 "478-1395-2-ND" H 7350 -1810 60  0001 C CNN "Digi-Key Part Number"
+	1    7240 -1980
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3470 -2880 3470 -2110
+Wire Wire Line
+	3570 -2880 3570 -2110
+Wire Wire Line
+	3670 -2880 3670 -2110
+Wire Wire Line
+	3770 -2880 3770 -2110
+Wire Wire Line
+	3990 -2870 3990 -2100
+Wire Wire Line
+	4090 -2870 4090 -2100
+Wire Wire Line
+	4190 -2870 4190 -2100
+Wire Wire Line
+	6510 -2900 6510 -2680
+Wire Wire Line
+	6610 -2900 6610 -2680
+Wire Wire Line
+	7100 -3150 7400 -3150
+Wire Wire Line
+	7600 -3150 7760 -3150
+Wire Wire Line
+	7960 -3150 8280 -3150
+Wire Wire Line
+	5980 -2040 5980 -2210
+Wire Wire Line
+	5980 -2210 6270 -2210
+Wire Wire Line
+	6270 -2210 6270 -2040
+Wire Wire Line
+	6270 -1840 6270 -1680
+Wire Wire Line
+	6270 -1680 5980 -1680
+Wire Wire Line
+	5980 -1680 5980 -1840
+Wire Notes Line
+	10740 -3130 10740 -2060
+Wire Notes Line
+	10740 -3130 13700 -3130
+Wire Notes Line
+	10740 -2070 10740 -1670
+Wire Notes Line
+	10740 -1670 13700 -1670
+Wire Notes Line
+	13700 -1670 13700 -3130
+Wire Wire Line
+	4430 -2860 4430 -2090
+Wire Wire Line
+	4530 -2860 4530 -2090
+Wire Wire Line
+	12490 -2650 13070 -2650
+Wire Wire Line
+	11690 -2650 11240 -2650
+Wire Wire Line
+	11520 -2570 11520 -2650
+Connection ~ 11520 -2650
+Wire Wire Line
+	12630 -2570 12630 -2650
+Connection ~ 12630 -2650
+Wire Wire Line
+	11520 -2370 11520 -2170
+Wire Wire Line
+	11520 -2170 12630 -2170
+Wire Wire Line
+	12630 -2170 12630 -2370
+Wire Wire Line
+	12090 -2350 12090 -2170
+Connection ~ 12090 -2170
+Wire Wire Line
+	7110 -2910 7410 -2910
+Wire Wire Line
+	7610 -2910 7770 -2910
+Wire Wire Line
+	7970 -2910 8290 -2910
+Wire Wire Line
+	7790 -2080 7790 -2130
+Wire Wire Line
+	7790 -2130 7240 -2130
+Wire Wire Line
+	7240 -2130 7240 -2080
+Wire Wire Line
+	7520 -2080 7520 -2130
+Connection ~ 7520 -2130
+Wire Wire Line
+	7790 -1880 7790 -1790
+Wire Wire Line
+	7790 -1790 7240 -1790
+Wire Wire Line
+	7240 -1790 7240 -1880
+Wire Wire Line
+	7520 -1880 7520 -1790
+Connection ~ 7520 -1790
+Text Label 7350 -2130 0    60   ~ 0
+VDD
+Text Label 7320 -1790 0    60   ~ 0
+GND
+$Comp
+L Jumper_NC_Small JP?
+U 1 1 59D306E5
+P 13170 -2650
+F 0 "JP?" H 13170 -2570 50  0000 C CNN
+F 1 "J_VDD" H 13180 -2710 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 13170 -2650 50  0001 C CNN
+F 3 "" H 13170 -2650 50  0001 C CNN
+	1    13170 -2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NC_Small JP?
+U 1 1 59D306E6
+P 11140 -2650
+F 0 "JP?" H 11140 -2570 50  0000 C CNN
+F 1 "J_+12V" H 11150 -2710 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 11140 -2650 50  0001 C CNN
+F 3 "" H 11140 -2650 50  0001 C CNN
+	1    11140 -2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11040 -2650 10840 -2650
+Wire Wire Line
+	13270 -2650 13580 -2650
+Wire Notes Line
+	8120 -2440 8120 -1530
+Wire Notes Line
+	8120 -1530 10250 -1530
+Wire Notes Line
+	10250 -1530 10250 -2440
+Wire Notes Line
+	10250 -2440 8120 -2440
+$Comp
+L Crystal_Small Y?
+U 1 1 59D306E7
+P 9220 -2220
+F 0 "Y?" H 9220 -2120 50  0000 C CNN
+F 1 "Crystal" H 9220 -2320 50  0000 C CNN
+F 2 "Huellas:Crystal_SMD_XRCHA_Murata_Serie_W2,5mm_L2,0mm" H 9220 -2220 50  0001 C CNN
+F 3 "" H 9220 -2220 50  0001 C CNN
+	1    9220 -2220
+	1    0    0    -1  
+$EndComp
+$Comp
+L 20pF C?
+U 1 1 59D306E8
+P 8800 -1950
+F 0 "C?" H 8810 -1880 50  0000 L CNN
+F 1 "8pF" H 8810 -2030 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 8710 -1980 50  0001 C CNN
+F 3 "" H 8810 -1880 50  0001 C CNN
+F 4 "478-3735-2-ND" H 8910 -1780 60  0001 C CNN "100V"
+	1    8800 -1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 20pF C?
+U 1 1 59D306E9
+P 9600 -1950
+F 0 "C?" H 9610 -1880 50  0000 L CNN
+F 1 "8pF" H 9610 -2030 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9510 -1980 50  0001 C CNN
+F 3 "" H 9610 -1880 50  0001 C CNN
+F 4 "478-3735-2-ND" H 9710 -1780 60  0001 C CNN "100V"
+	1    9600 -1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9320 -2220 9600 -2220
+Wire Wire Line
+	9600 -2220 9600 -2050
+Wire Wire Line
+	9120 -2220 8800 -2220
+Wire Wire Line
+	8800 -2220 8800 -2050
+Wire Wire Line
+	8800 -1850 8800 -1660
+Wire Wire Line
+	8800 -1660 9600 -1660
+Wire Wire Line
+	9600 -1660 9600 -1850
+Text Label 9140 -1660 0    60   ~ 0
+GND
+Text Label 8800 -2220 0    60   ~ 0
+XTAL1
+Text Label 9600 -2220 2    60   ~ 0
+XTAL2
+Text Label 7120 -2690 0    60   ~ 0
+VDD
+Text Label 8300 -2690 2    60   ~ 0
+GND
+$Comp
+L 1K R?
+U 1 1 59D306EA
+P 7880 -2690
+F 0 "R?" H 7910 -2670 50  0000 L CNN
+F 1 "1K" H 7910 -2730 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7810 -2770 50  0001 C CNN
+F 3 "" H 7910 -2670 50  0000 C CNN
+F 4 "P21019TR-ND" H 8010 -2570 60  0001 C CNN "RES SMD 1K OHM 0.5% 1/4W 0805"
+	1    7880 -2690
+	0    1    1    0   
+$EndComp
+$Comp
+L Led_0805 D?
+U 1 1 59D306EB
+P 7520 -2690
+F 0 "D?" H 7400 -2650 50  0000 L CNN
+F 1 "VDD" H 7460 -2770 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7370 -2665 50  0001 C CNN
+F 3 "" H 7470 -2565 50  0000 C CNN
+F 4 "475-1410-2-ND" H 7570 -2465 60  0001 C CNN "Digi-Key Part Number"
+	1    7520 -2690
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7120 -2690 7420 -2690
+Wire Wire Line
+	7620 -2690 7780 -2690
+Wire Wire Line
+	7980 -2690 8300 -2690
+Wire Notes Line
+	5830 -2550 5830 -3410
+Wire Wire Line
+	8940 -2760 9490 -2760
+$Comp
+L 10K R?
+U 1 1 59D306EC
+P 9360 -2910
+F 0 "R?" H 9390 -2890 50  0000 L CNN
+F 1 "10K" H 9390 -2950 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9290 -2990 50  0001 C CNN
+F 3 "" H 9390 -2890 50  0000 C CNN
+F 4 "311-10KARTR-ND" H 9490 -2790 60  0001 C CNN "RES SMD 10K OHM 5% 1/8W 0805"
+	1    9360 -2910
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9360 -2810 9360 -2760
+Connection ~ 9360 -2760
+Wire Wire Line
+	9360 -3240 9360 -3010
+Text Label 9360 -3240 3    60   ~ 0
+VDD
+Text Label 8940 -2760 0    60   ~ 0
+RESET
+Wire Wire Line
+	9890 -2760 10240 -2760
+Text Label 10240 -2760 2    60   ~ 0
+GND
+$Comp
+L CONN_01X02 J?
+U 1 1 59D306ED
+P 6560 -3100
+F 0 "J?" H 6560 -2950 50  0000 C CNN
+F 1 "VDD 12V" V 6660 -3100 50  0000 C CNN
+F 2 "Foot_Prints_Manager_Outputs:SUPPLY_12V" H 6560 -3100 50  0001 C CNN
+F 3 "" H 6560 -3100 50  0001 C CNN
+	1    6560 -3100
+	0    -1   -1   0   
+$EndComp
+Text Label 6070 -2680 1    60   ~ 0
++5V
+Text Label 6170 -2680 1    60   ~ 0
+GND
+Wire Wire Line
+	6070 -2900 6070 -2680
+Wire Wire Line
+	6170 -2900 6170 -2680
+$Comp
+L CONN_01X02 J?
+U 1 1 59D306EE
+P 6120 -3100
+F 0 "J?" H 6120 -2950 50  0000 C CNN
+F 1 "VDD 5V" V 6220 -3100 50  0000 C CNN
+F 2 "Foot_Prints_Manager_Outputs:SUPPLY_5V" H 6120 -3100 50  0001 C CNN
+F 3 "" H 6120 -3100 50  0001 C CNN
+	1    6120 -3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 -2860 4750 -2090
+Wire Wire Line
+	4850 -2860 4850 -2090
+Text Label 4750 -2090 1    60   ~ 0
+SPEAKER
+Text Label 4850 -2090 1    60   ~ 0
+GND
+$Comp
+L CONN_01X02 J?
+U 1 1 59D306EF
+P 4800 -3060
+F 0 "J?" H 4800 -2910 50  0000 C CNN
+F 1 "SPEAKER" V 4900 -3060 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 4800 -3060 50  0001 C CNN
+F 3 "" H 4800 -3060 50  0001 C CNN
+	1    4800 -3060
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	8780 -3430 8780 -2490
+Wire Notes Line
+	8780 -2490 10540 -2490
+Wire Notes Line
+	10540 -2490 10540 -3430
+Wire Notes Line
+	10540 -3430 8780 -3430
+Text Notes 8870 -3290 0    60   ~ 0
+RESET
+Text Notes 8160 -2230 0    60   ~ 0
+CRYSTAL \nOSCILLATOR
+$Comp
+L 0.1uF C?
+U 1 1 59D306F0
+P 6600 -1940
+F 0 "C?" H 6610 -1870 50  0000 L CNN
+F 1 "0.1uF" H 6610 -2020 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6510 -1970 50  0001 C CNN
+F 3 "" H 6610 -1870 50  0001 C CNN
+F 4 "478-1395-2-ND" H 6710 -1770 60  0001 C CNN "Digi-Key Part Number"
+	1    6600 -1940
+	1    0    0    -1  
+$EndComp
+$Comp
+L 10uF C?
+U 1 1 59D306F1
+P 6890 -1940
+F 0 "C?" H 6900 -1870 50  0000 L CNN
+F 1 "10uF" H 6900 -2020 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6800 -1970 50  0001 C CNN
+F 3 "" H 6900 -1870 50  0001 C CNN
+F 4 "490-5523-2-ND" H 7000 -1770 60  0001 C CNN "25V"
+	1    6890 -1940
+	1    0    0    -1  
+$EndComp
+Text Label 6850 -1680 2    60   ~ 0
+GND
+Text Label 6630 -2210 0    60   ~ 0
++5V
+Wire Wire Line
+	6600 -2040 6600 -2210
+Wire Wire Line
+	6600 -2210 6890 -2210
+Wire Wire Line
+	6890 -2210 6890 -2040
+Wire Wire Line
+	6890 -1840 6890 -1680
+Wire Wire Line
+	6890 -1680 6600 -1680
+Wire Wire Line
+	6600 -1680 6600 -1840
+Wire Notes Line
+	5830 -2550 6800 -2550
+Wire Notes Line
+	6800 -2550 6800 -3410
+Wire Notes Line
+	6800 -3410 5830 -3410
+Text Notes 5930 -2330 0    60   ~ 0
+DECUPLING CAPACITORS
+Wire Notes Line
+	5830 -2440 5830 -1580
+Wire Notes Line
+	5830 -1580 8000 -1580
+Wire Notes Line
+	8000 -1580 8000 -2440
+Wire Notes Line
+	8000 -2440 5830 -2440
+Wire Notes Line
+	6870 -3440 6870 -2500
+Wire Notes Line
+	6870 -2500 8610 -2500
+Wire Notes Line
+	8610 -2500 8610 -3440
+Wire Notes Line
+	8610 -3440 6870 -3440
+Text Notes 6910 -3320 0    60   ~ 0
+INDICATORS LEDS
+Wire Notes Line
+	3300 -1960 5730 -1960
+Wire Notes Line
+	5730 -1960 5730 -3410
+Wire Notes Line
+	5730 -3410 3300 -3410
+Wire Notes Line
+	3300 -3410 3300 -1960
+Wire Wire Line
+	5150 -2860 5150 -2090
+Wire Wire Line
+	5250 -2860 5250 -2090
+Text Label 5150 -2090 1    60   ~ 0
+RESET
+Text Label 5250 -2090 1    60   ~ 0
+DTR
+$Comp
+L CONN_01X02 J?
+U 1 1 59D306F2
+P 5200 -3060
+F 0 "J?" H 5200 -2910 50  0000 C CNN
+F 1 "RESET" V 5300 -3060 50  0000 C CNN
+F 2 "Foot_Prints_Manager_Outputs:RESET_CONNECTOR" H 5200 -3060 50  0001 C CNN
+F 3 "" H 5200 -3060 50  0001 C CNN
+	1    5200 -3060
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 0.1uF C?
+U 1 1 59D306F3
+P 9100 -3020
+F 0 "C?" H 9110 -2950 50  0000 L CNN
+F 1 "0.1uF" H 9110 -3100 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9010 -3050 50  0001 C CNN
+F 3 "" H 9110 -2950 50  0001 C CNN
+F 4 "478-1395-2-ND" H 9210 -2850 60  0001 C CNN "Digi-Key Part Number"
+	1    9100 -3020
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 -2920 9100 -2760
+Connection ~ 9100 -2760
+Wire Wire Line
+	9100 -3120 9100 -3280
+Text Label 9100 -3280 3    60   ~ 0
+DTR
+NoConn ~ 12370 2330
+NoConn ~ 12370 2430
+$Comp
+L LED D?
+U 1 1 59D306F4
+P 1050 6690
+F 0 "D?" H 1150 6640 50  0000 C CNN
+F 1 "LED" H 1050 6590 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 1050 6690 50  0001 C CNN
+F 3 "" H 1050 6690 50  0000 C CNN
+	1    1050 6690
+	0    -1   -1   0   
+$EndComp
+Text Label 2100 4700 0    47   ~ 0
+IAOUT
+Text Label 2800 1250 3    47   ~ 0
+IAOUT
+Text Label 3100 4050 1    47   ~ 0
+REFOUT
+Text Label 1350 650  0    47   ~ 0
+REFOUT
+Text Label 1350 1100 0    47   ~ 0
+SW
+Text Label 2500 4100 1    47   ~ 0
+SW
+$Comp
+L CONN_01X03-RESCUE-proyectos P?
+U 1 1 59D306F5
+P 2940 7010
+F 0 "P?" H 2940 7210 50  0000 C CNN
+F 1 "ECG INPUTS" V 3040 7010 50  0000 C CNN
+F 2 "Huellas:Pin_Header_Straight_1x03_Pitch2.54mm" H 2940 7010 50  0001 C CNN
+F 3 "" H 2940 7010 50  0000 C CNN
+	1    2940 7010
+	0    1    1    0   
+$EndComp
+Text Label 4340 6500 3    60   ~ 0
+LOD-
+Text Label 4440 6500 3    60   ~ 0
+LOD+
+Text Label 4540 6500 3    60   ~ 0
+SDN_OFF
+Text Label 3700 4700 1    60   ~ 0
+OUT_ANALOG
+Text Label 4500 3350 2    60   ~ 0
+LOD-
+Text Label 4500 3050 2    60   ~ 0
+LOD+
+Text Label 4500 2750 2    60   ~ 0
+SDN
+Text Label 2800 4150 1    47   ~ 0
+OPAMP+
+Text Label 3400 3800 3    47   ~ 0
+OPAMP-
+Text GLabel 750  2450 0    60   Input ~ 0
+LA
+Text GLabel 750  2750 0    60   Input ~ 0
+RA
+Text GLabel 750  3350 0    60   Input ~ 0
+RL
+Text GLabel 2840 6810 1    60   Input ~ 0
+LA
+Text GLabel 2940 6810 1    60   Input ~ 0
+RA
+Text GLabel 3040 6810 1    60   Input ~ 0
+RL
+Text GLabel 3400 1350 1    60   Input ~ 0
++vs
+Text Label 1050 5690 3    60   ~ 0
+OUT_ANALOG
+Text Notes 1050 5550 0    60   ~ 0
+INDICADORES LED\n
+Text Notes 750  7040 3    47   ~ 0
+IND. ECG\n
+Text Notes 2650 6250 0    59   ~ 0
+CONECTORES DE SALIDA/ENTRADA
+$Comp
+L 10M R?
+U 1 1 59D306F6
+P 1000 2150
+F 0 "R?" H 1030 2170 50  0000 L CNN
+F 1 "10M" H 1030 2110 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 930 2070 50  0001 C CNN
+F 3 "" H 1030 2170 50  0000 C CNN
+F 4 "311-10.0MCRTR-ND" H 1130 2270 60  0001 C CNN "RES SMD 10M OHM 1% 1/8W 0805"
+	1    1000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 10M R?
+U 1 1 59D306F7
+P 1300 2150
+F 0 "R?" H 1330 2170 50  0000 L CNN
+F 1 "10M" H 1330 2110 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 1230 2070 50  0001 C CNN
+F 3 "" H 1330 2170 50  0000 C CNN
+F 4 "311-10.0MCRTR-ND" H 1430 2270 60  0001 C CNN "RES SMD 10M OHM 1% 1/8W 0805"
+	1    1300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 180K R?
+U 1 1 59D306F8
+P 1700 2450
+F 0 "R?" H 1730 2470 50  0000 L CNN
+F 1 "180K" H 1730 2410 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 1630 2370 50  0001 C CNN
+F 3 "" H 1730 2470 50  0000 C CNN
+F 4 "311-180KCRTR-ND" H 1830 2570 60  0001 C CNN "RES SMD 180K OHM 1% 1/8W 0805"
+	1    1700 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 180K R?
+U 1 1 59D306F9
+P 1700 2750
+F 0 "R?" H 1730 2770 50  0000 L CNN
+F 1 "180K" H 1730 2710 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 1630 2670 50  0001 C CNN
+F 3 "" H 1730 2770 50  0000 C CNN
+F 4 "311-180KCRTR-ND" H 1830 2870 60  0001 C CNN "RES SMD 180K OHM 1% 1/8W 0805"
+	1    1700 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 360K R?
+U 1 1 59D306FA
+P 1200 3350
+F 0 "R?" H 1230 3370 50  0000 L CNN
+F 1 "360K" H 1230 3310 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 1130 3270 50  0001 C CNN
+F 3 "" H 1230 3370 50  0000 C CNN
+F 4 "311-360KCRTR-ND" H 1330 3470 60  0001 C CNN "RES SMD 360K OHM 1% 1/8W 0805"
+	1    1200 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 1M R?
+U 1 1 59D306FB
+P 2550 4700
+F 0 "R?" H 2580 4720 50  0000 L CNN
+F 1 "1M" H 2580 4660 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2480 4620 50  0001 C CNN
+F 3 "" H 2580 4720 50  0000 C CNN
+F 4 "311-1.00MCRTR-ND" H 2680 4820 60  0001 C CNN "RES SMD 1M OHM 1% 1/8W 0805"
+	1    2550 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 1M R?
+U 1 1 59D306FC
+P 2800 4400
+F 0 "R?" H 2830 4420 50  0000 L CNN
+F 1 "1M" H 2830 4360 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2730 4320 50  0001 C CNN
+F 3 "" H 2830 4420 50  0000 C CNN
+F 4 "311-1.00MCRTR-ND" H 2930 4520 60  0001 C CNN "RES SMD 1M OHM 1% 1/8W 0805"
+	1    2800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 100K R?
+U 1 1 59D306FD
+P 3250 4150
+F 0 "R?" H 3280 4170 50  0000 L CNN
+F 1 "100K" H 3280 4110 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3180 4070 50  0001 C CNN
+F 3 "" H 3280 4170 50  0000 C CNN
+F 4 "P100KDATR-ND" H 3380 4270 60  0001 C CNN "RES SMD 100K OHM 0.1% 1/8W 0805"
+	1    3250 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 1M R?
+U 1 1 59D306FE
+P 3550 4150
+F 0 "R?" H 3580 4170 50  0000 L CNN
+F 1 "1M" H 3580 4110 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3480 4070 50  0001 C CNN
+F 3 "" H 3580 4170 50  0000 C CNN
+F 4 "311-1.00MCRTR-ND" H 3680 4270 60  0001 C CNN "RES SMD 1M OHM 1% 1/8W 0805"
+	1    3550 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 10M R?
+U 1 1 59D306FF
+P 3250 1500
+F 0 "R?" H 3280 1520 50  0000 L CNN
+F 1 "10M" H 3280 1460 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3180 1420 50  0001 C CNN
+F 3 "" H 3280 1520 50  0000 C CNN
+F 4 "311-10.0MCRTR-ND" H 3380 1620 60  0001 C CNN "RES SMD 10M OHM 1% 1/8W 0805"
+	1    3250 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L 10M R?
+U 1 1 59D30700
+P 3400 1050
+F 0 "R?" H 3430 1070 50  0000 L CNN
+F 1 "10M" H 3430 1010 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3330 970 50  0001 C CNN
+F 3 "" H 3430 1070 50  0000 C CNN
+F 4 "311-10.0MCRTR-ND" H 3530 1170 60  0001 C CNN "RES SMD 10M OHM 1% 1/8W 0805"
+	1    3400 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 10M R?
+U 1 1 59D30701
+P 2650 1100
+F 0 "R?" H 2680 1120 50  0000 L CNN
+F 1 "10M" H 2680 1060 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2580 1020 50  0001 C CNN
+F 3 "" H 2680 1120 50  0000 C CNN
+F 4 "311-10.0MCRTR-ND" H 2780 1220 60  0001 C CNN "RES SMD 10M OHM 1% 1/8W 0805"
+	1    2650 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L 10M R?
+U 1 1 59D30702
+P 2500 1500
+F 0 "R?" H 2530 1520 50  0000 L CNN
+F 1 "10M" H 2530 1460 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2430 1420 50  0001 C CNN
+F 3 "" H 2530 1520 50  0000 C CNN
+F 4 "311-10.0MCRTR-ND" H 2630 1620 60  0001 C CNN "RES SMD 10M OHM 1% 1/8W 0805"
+	1    2500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1.4M R?
+U 1 1 59D30703
+P 2200 1100
+F 0 "R?" H 2230 1120 50  0000 L CNN
+F 1 "1.4M" H 2230 1060 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2130 1020 50  0001 C CNN
+F 3 "" H 2230 1120 50  0000 C CNN
+F 4 "P1.4BTTR-ND" H 2330 1220 60  0001 C CNN "RES SMD 1.4M OHM 1% 1/8W 0805"
+	1    2200 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L 1K R?
+U 1 1 59D30704
+P 1050 6240
+F 0 "R?" H 1080 6260 50  0000 L CNN
+F 1 "1K" H 1080 6200 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 980 6160 50  0001 C CNN
+F 3 "" H 1050 6240 50  0000 C CNN
+F 4 "RMCF0805FT1K00TR-ND" H 1180 6360 60  0001 C CNN "RES SMD 1K OHM 1% 1/8W 0805"
+	1    1050 6240
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1nF C?
+U 1 1 59D30705
+P 1600 3200
+F 0 "C?" H 1610 3270 50  0000 L CNN
+F 1 "1nF" H 1610 3120 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1510 3170 50  0001 C CNN
+F 3 "" H 1610 3270 50  0000 C CNN
+F 4 "490-6441-2-ND" H 1710 3370 60  0001 C CNN "CAP CER 1000PF 50V C0G/NP0 0805"
+	1    1600 3200
+	1    0    0    -1  
+$EndComp
+Text Label 1800 3350 0    47   ~ 0
+RLD
+Text Label 1800 3050 0    47   ~ 0
+RLDFB
+$Comp
+L 1.5nF C?
+U 1 1 59D30706
+P 3300 4700
+F 0 "C?" H 3310 4770 50  0000 L CNN
+F 1 "1.5nF" H 3310 4620 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3210 4670 50  0001 C CNN
+F 3 "" H 3310 4770 50  0000 C CNN
+F 4 "1276-1794-2-ND" H 3410 4870 60  0001 C CNN "CAP CER 1500PF 50V X7R 0805"
+	1    3300 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L 0.1uF C?
+U 1 1 59D30707
+P 3550 1500
+F 0 "C?" H 3560 1570 50  0000 L CNN
+F 1 "0.1uF" H 3560 1420 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3460 1470 50  0001 C CNN
+F 3 "" H 3560 1570 50  0000 C CNN
+F 4 "1276-2450-2-ND" H 3660 1670 60  0001 C CNN "CAP CER 0.1UF 25V X7R 0805"
+	1    3550 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L 0.1uF C?
+U 1 1 59D30708
+P 3400 800
+F 0 "C?" H 3410 870 50  0000 L CNN
+F 1 "0.1uF" H 3410 720 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3310 770 50  0001 C CNN
+F 3 "" H 3410 870 50  0000 C CNN
+F 4 "1276-2450-2-ND" H 3510 970 60  0001 C CNN "CAP CER 0.1UF 25V X7R 0805"
+	1    3400 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 0.33uF C?
+U 1 1 59D30709
+P 1850 800
+F 0 "C?" H 1860 870 50  0000 L CNN
+F 1 "0.33uF" H 1860 720 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1760 770 50  0001 C CNN
+F 3 "" H 1860 870 50  0000 C CNN
+F 4 "1276-3019-2-ND" H 1960 970 60  0001 C CNN "CAP CER 0.33UF 50V Y5V 0805"
+	1    1850 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0.33uF C?
+U 1 1 59D3070A
+P 1900 1850
+F 0 "C?" H 1910 1920 50  0000 L CNN
+F 1 "0.33uF" H 1910 1770 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1810 1820 50  0001 C CNN
+F 3 "" H 1910 1920 50  0000 C CNN
+F 4 "1276-3019-2-ND" H 2010 2020 60  0001 C CNN "CAP CER 0.33UF 50V Y5V 0805"
+	1    1900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0.1uF C?
+U 1 1 59D3070B
+P 6500 2950
+F 0 "C?" H 6510 3020 50  0000 L CNN
+F 1 "0.1uF" H 6510 2870 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6410 2920 50  0001 C CNN
+F 3 "" H 6510 3020 50  0000 C CNN
+F 4 "1276-2450-2-ND" H 6610 3120 60  0001 C CNN "CAP CER 0.1UF 25V X7R 0805"
+	1    6500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 10K R?
+U 1 1 59D3070C
+P 5650 1300
+F 0 "R?" H 5680 1320 50  0000 L CNN
+F 1 "10K" H 5680 1260 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5580 1220 50  0001 C CNN
+F 3 "" H 5680 1320 50  0000 C CNN
+F 4 "RMCF0805FT10K0TR-ND" H 5780 1420 60  0001 C CNN "RES SMD 10K OHM 1% 1/8W 0805"
+	1    5650 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L 1K R?
+U 1 1 59D3070D
+P 6300 2700
+F 0 "R?" H 6330 2720 50  0000 L CNN
+F 1 "1K" H 6330 2660 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6230 2620 50  0001 C CNN
+F 3 "" H 6300 2700 50  0000 C CNN
+F 4 "RMCF0805FT1K00TR-ND" H 6430 2820 60  0001 C CNN "RES SMD 1K OHM 1% 1/8W 0805"
+	1    6300 2700
+	0    1    1    0   
+$EndComp
+Text Label 3100 1500 1    47   ~ 0
+REFIN
+$Comp
+L PIC16F688 U?
+U 1 1 59D3070E
+P 9040 1850
+F 0 "U?" H 9340 1400 60  0000 C CNN
+F 1 "PIC16F688" H 8990 1750 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 9040 1850 60  0001 C CNN
+F 3 "" H 9040 1850 60  0000 C CNN
+	1    9040 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X05 P?
+U 1 1 59D3070F
+P 3570 7010
+F 0 "P?" H 3570 7310 50  0000 C CNN
+F 1 "PIC_PROGRAMER" V 3670 7010 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x05_Pitch2.54mm" V 3570 7010 50  0001 C CNN
+F 3 "" H 3570 7010 50  0000 C CNN
+	1    3570 7010
+	0    1    1    0   
+$EndComp
+Text Label 3770 6510 3    47   ~ 0
+MCLR/Vpp
+Text Label 3570 6510 3    47   ~ 0
+GND
+Text Label 3470 6510 3    47   ~ 0
+ICSPDAT
+Text Label 3370 6510 3    47   ~ 0
+ICSPCLK
+Text Label 7540 1850 0    47   ~ 0
+GND
+Text Label 7540 1650 0    47   ~ 0
+GND
+Text Label 9040 2650 1    47   ~ 0
+GND
+Text Label 9040 1050 3    47   ~ 0
+VDD
+$Comp
+L 0.1uF C?
+U 1 1 59D30710
+P 9290 1200
+F 0 "C?" H 9300 1270 50  0000 L CNN
+F 1 "0.1uF" H 9300 1120 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9200 1170 50  0001 C CNN
+F 3 "" H 9300 1270 50  0000 C CNN
+F 4 "1276-2450-2-ND" H 9400 1370 60  0001 C CNN "CAP CER 0.1UF 25V X7R 0805"
+	1    9290 1200
+	1    0    0    -1  
+$EndComp
+Text Label 9290 1450 1    47   ~ 0
+GND
+Text Label 5200 6220 3    47   ~ 0
+GND
+Text Label 5000 6220 3    47   ~ 0
+O_DIG2
+Text Label 5100 6220 3    47   ~ 0
+O_DIG1
+Text Label 10090 1600 2    47   ~ 0
+MCLR/Vpp
+Text Label 10090 1750 2    47   ~ 0
+ICSPCLK
+Text Label 10090 1900 2    47   ~ 0
+ICSPDAT
+Text Label 10090 2050 2    47   ~ 0
+O_DIG1
+Text Label 7790 2150 0    47   ~ 0
+O_DIG2
+Text Label 10790 2300 1    47   ~ 0
+GND
+$Comp
+L 10K R?
+U 1 1 59D30711
+P 10790 1250
+F 0 "R?" H 10820 1270 50  0000 L CNN
+F 1 "10K" H 10820 1210 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 10720 1170 50  0001 C CNN
+F 3 "" H 10820 1270 50  0000 C CNN
+F 4 "RMCF0805FT10K0TR-ND" H 10920 1370 60  0001 C CNN "RES SMD 10K OHM 1% 1/8W 0805"
+	1    10790 1250
+	1    0    0    -1  
+$EndComp
+Text Label 10390 1400 0    47   ~ 0
+MCLR/Vpp
+Text Label 10790 850  3    47   ~ 0
+VDD
+Text Label 4250 1700 1    47   ~ 0
+GND
+Text Label 4650 2900 1    47   ~ 0
+GND
+Text Label 1050 7240 1    47   ~ 0
+GND
+Text Label 5400 3150 1    60   ~ 0
+OUT_ANALOG
+Text Notes 5500 2350 0    59   ~ 0
+CONECCION ENTRE A/D\n
+Text Notes 850  4950 0    59   ~ 0
+BLOQUE DE ADQUISICION DE ECG
+Text Label 6500 3350 1    59   ~ 0
+GND
+Text Notes 8590 950  0    60   ~ 0
+CONVERTIDOR ANALOGICO A DIGITAL\n
+Text Label 5350 1500 0    60   ~ 0
+SDN
+Text Notes 5200 800  0    60   ~ 0
+ENTRADA DE CONTROL\n DE APAGADO DEL ECG
+Text Label 5650 1950 1    60   ~ 0
+SDN_OFF
+$Comp
+L CONN_01X03-RESCUE-proyectos P?
+U 1 1 59D30712
+P 4440 7000
+F 0 "P?" H 4440 7200 50  0000 C CNN
+F 1 "AD8232_CONTROL" V 4540 7000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4440 7000 50  0001 C CNN
+F 3 "" H 4440 7000 50  0000 C CNN
+	1    4440 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L Crystal_8MHz Y?
+U 1 1 59D30713
+P 8090 1750
+F 0 "Y?" H 8090 1850 50  0000 C CNN
+F 1 "Crystal_8MHz" V 7890 1750 50  0000 C CNN
+F 2 "Crystals:Crystal_SMD_Abracon_ABM3-2pin_5.0x3.2mm_HandSoldering" H 7990 1750 50  0001 C CNN
+F 3 "" H 8090 1850 50  0000 C CNN
+F 4 "535-10630-2-ND" H 8090 1750 60  0001 C CNN "CRYSTAL 8.0000MHZ 18PF SMD"
+	1    8090 1750
+	0    1    1    0   
+$EndComp
+Text Label 3670 6510 3    60   ~ 0
+VCC
+$Comp
+L PASO_A/D JP?
+U 1 1 59D30714
+P 5810 2700
+F 0 "JP?" H 5810 2850 50  0000 C CNN
+F 1 "PASO_A/D" H 5810 2620 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5710 2750 50  0001 C CNN
+F 3 "" H 5810 2700 50  0000 C CNN
+	1    5810 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 1300 2450
+Wire Wire Line
+	2500 3850 2500 4100
+Wire Wire Line
+	2800 3850 2800 4300
+Wire Wire Line
+	3400 3850 3400 4150
+Connection ~ 2800 4150
+Wire Wire Line
+	2800 4500 2800 4700
+Wire Wire Line
+	2450 4700 2100 4700
+Connection ~ 2800 4700
+Connection ~ 3700 4150
+Connection ~ 3700 4700
+Wire Wire Line
+	1050 6340 1050 6540
+Wire Wire Line
+	1050 6840 1050 7240
+Wire Wire Line
+	1900 2150 2000 2150
+Wire Wire Line
+	1900 1950 1900 2150
+Wire Wire Line
+	2500 1650 1900 1650
+Wire Wire Line
+	1900 1650 1900 1750
+Wire Wire Line
+	3700 800  3700 1650
+Connection ~ 3400 1500
+Wire Wire Line
+	3100 800  3100 1650
+Wire Wire Line
+	3100 800  3300 800 
+Connection ~ 3100 1500
+Wire Wire Line
+	3100 1050 3300 1050
+Connection ~ 3100 1050
+Wire Wire Line
+	3500 800  3700 800 
+Wire Wire Line
+	3500 1050 3700 1050
+Connection ~ 3700 1050
+Wire Wire Line
+	4250 1500 4250 1700
+Connection ~ 3700 1500
+Connection ~ 2800 1100
+Wire Wire Line
+	2500 1600 2500 1650
+Wire Wire Line
+	2500 1100 2500 1400
+Wire Wire Line
+	2300 1100 2550 1100
+Connection ~ 2500 1100
+Connection ~ 2500 1650
+Wire Wire Line
+	1350 1100 2100 1100
+Wire Wire Line
+	1850 900  1850 1100
+Connection ~ 1850 1100
+Wire Wire Line
+	1850 700  1850 700 
+Wire Wire Line
+	1850 650  1850 700 
+Wire Wire Line
+	1350 650  1850 650 
+Connection ~ 3100 4150
+Wire Wire Line
+	4200 3350 4500 3350
+Wire Wire Line
+	4340 6800 4340 6500
+Wire Wire Line
+	4440 6800 4440 6500
+Wire Wire Line
+	4200 3050 4500 3050
+Wire Wire Line
+	4200 2750 4500 2750
+Wire Wire Line
+	3700 4700 3700 3850
+Wire Wire Line
+	1050 5690 1050 6140
+Wire Notes Line
+	550  7650 2400 7650
+Wire Notes Line
+	2400 7650 2400 5400
+Wire Notes Line
+	2400 5400 550  5400
+Wire Wire Line
+	3650 1500 4250 1500
+Wire Wire Line
+	4650 2450 4650 2900
+Wire Wire Line
+	1600 2750 750  2750
+Wire Wire Line
+	1600 2450 750  2450
+Wire Wire Line
+	1000 2250 1000 2750
+Connection ~ 1000 2750
+Wire Wire Line
+	1300 2250 1300 2450
+Wire Wire Line
+	1300 1900 1300 2050
+Wire Wire Line
+	1000 1900 1300 1900
+Wire Wire Line
+	1000 1900 1000 2050
+Wire Wire Line
+	1100 3350 750  3350
+Wire Wire Line
+	3400 4700 3700 4700
+Wire Wire Line
+	6500 2700 6500 2850
+Connection ~ 6500 2700
+Wire Wire Line
+	6500 3050 6500 3350
+Wire Wire Line
+	2000 2450 1800 2450
+Wire Wire Line
+	2000 2750 1800 2750
+Wire Wire Line
+	2650 4700 3200 4700
+Wire Wire Line
+	3350 4150 3450 4150
+Wire Wire Line
+	3650 4150 3700 4150
+Wire Wire Line
+	3350 1500 3450 1500
+Wire Wire Line
+	3150 1500 3100 1500
+Wire Wire Line
+	2750 1100 2800 1100
+Connection ~ 3400 4150
+Wire Wire Line
+	3050 4150 3150 4150
+Wire Wire Line
+	2000 3050 1600 3050
+Wire Wire Line
+	1600 3050 1600 3100
+Wire Wire Line
+	1600 3300 1600 3350
+Connection ~ 1600 3350
+Wire Wire Line
+	1300 3350 2000 3350
+Wire Wire Line
+	2800 4150 2850 4150
+Wire Wire Line
+	3100 4150 3100 3850
+Wire Wire Line
+	3400 1650 3400 1350
+Wire Wire Line
+	2800 1100 2800 1650
+Wire Wire Line
+	3370 6510 3370 6810
+Wire Wire Line
+	3470 6510 3470 6810
+Wire Wire Line
+	3570 6510 3570 6810
+Wire Wire Line
+	3670 6510 3670 6810
+Wire Wire Line
+	3770 6510 3770 6810
+Wire Wire Line
+	9040 1300 9040 1050
+Wire Wire Line
+	9040 2450 9040 2650
+Wire Wire Line
+	7740 1850 7540 1850
+Wire Wire Line
+	7740 1650 7540 1650
+Wire Wire Line
+	9040 1050 9290 1050
+Wire Wire Line
+	9290 1050 9290 1100
+Wire Wire Line
+	9290 1300 9290 1450
+Wire Wire Line
+	5000 6220 5000 6470
+Wire Wire Line
+	5100 6220 5100 6470
+Wire Wire Line
+	5200 6220 5200 6470
+Wire Wire Line
+	8240 2150 7790 2150
+Wire Wire Line
+	9790 2050 10090 2050
+Wire Wire Line
+	9790 1900 10090 1900
+Wire Wire Line
+	9790 1750 10090 1750
+Wire Wire Line
+	9790 1600 10090 1600
+Wire Wire Line
+	10790 2010 10790 2300
+Wire Wire Line
+	10790 850  10790 1150
+Wire Wire Line
+	10790 1350 10790 1610
+Wire Wire Line
+	10390 1400 10790 1400
+Connection ~ 10790 1400
+Wire Notes Line
+	550  5400 550  7650
+Wire Wire Line
+	7940 1650 8240 1650
+Connection ~ 8090 1650
+Wire Wire Line
+	7940 1850 8240 1850
+Connection ~ 8090 1850
+Wire Notes Line
+	2600 6000 2600 7550
+Wire Notes Line
+	2600 7550 6750 7550
+Wire Notes Line
+	6750 7550 6750 6000
+Wire Notes Line
+	6750 6000 2600 6000
+Wire Notes Line
+	5100 2150 7050 2150
+Wire Notes Line
+	7050 2150 7050 3650
+Wire Notes Line
+	7050 3650 5100 3650
+Wire Notes Line
+	5100 3650 5100 2150
+Wire Notes Line
+	500  550  4950 550 
+Wire Notes Line
+	4950 550  4950 5150
+Wire Notes Line
+	4950 5150 500  5150
+Wire Notes Line
+	500  5150 500  550 
+Wire Wire Line
+	4200 2150 4600 2150
+Wire Wire Line
+	4200 2450 4650 2450
+Wire Notes Line
+	7290 750  11090 750 
+Wire Notes Line
+	11090 750  11090 3100
+Wire Notes Line
+	11090 3100 7290 3100
+Wire Notes Line
+	7290 3100 7290 750 
+Wire Wire Line
+	6650 2700 6400 2700
+Wire Wire Line
+	5400 2700 5400 3150
+Wire Wire Line
+	5650 1000 5650 1200
+Wire Wire Line
+	5650 1400 5650 1950
+Wire Wire Line
+	5650 1500 5350 1500
+Connection ~ 5650 1500
+Wire Notes Line
+	5100 550  6300 550 
+Wire Notes Line
+	6300 550  6300 1950
+Wire Notes Line
+	5100 550  5100 1990
+Wire Wire Line
+	4540 6800 4540 6500
+$Comp
+L CONN_01X03 P?
+U 1 1 59D30715
+P 5100 6670
+F 0 "P?" H 5100 6870 50  0000 C CNN
+F 1 "PIC_OUTPUTS" V 5200 6670 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5100 6670 50  0001 C CNN
+F 3 "" H 5100 6670 50  0000 C CNN
+	1    5100 6670
+	0    1    1    0   
+$EndComp
+$Comp
+L 22pF C?
+U 1 1 59D30716
+P 7840 1650
+F 0 "C?" H 7850 1720 50  0000 L CNN
+F 1 "22pF" H 7850 1570 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7750 1620 50  0001 C CNN
+F 3 "" H 7850 1720 50  0000 C CNN
+F 4 "399-1113-2-ND" H 7950 1820 60  0001 C CNN "CAP CER 22PF 50V C0G/NP0 0805"
+	1    7840 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L 22pF C?
+U 1 1 59D30717
+P 7840 1850
+F 0 "C?" H 7850 1920 50  0000 L CNN
+F 1 "22pF" H 7850 1770 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7750 1820 50  0001 C CNN
+F 3 "" H 7850 1920 50  0000 C CNN
+F 4 "399-1113-2-ND" H 7950 2020 60  0001 C CNN "CAP CER 22PF 50V C0G/NP0 0805"
+	1    7840 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L 10nF C?
+U 1 1 59D30718
+P 2950 4150
+F 0 "C?" H 2960 4220 50  0000 L CNN
+F 1 "10nF" H 2700 4150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2860 4120 50  0001 C CNN
+F 3 "" H 2960 4220 50  0000 C CNN
+F 4 "478-1383-2-ND" H 3060 4320 60  0001 C CNN "CAP CER 10000PF 50V X7R 0805"
+	1    2950 4150
+	0    1    1    0   
+$EndComp
+Text Label 1060 1900 0    60   ~ 0
+VDD
+$Comp
+L AD8232_A U?
+U 1 1 59D30719
+P 3100 2750
+F 0 "U?" H 2250 1750 60  0000 C CNN
+F 1 "AD8232_A" H 2300 4100 60  0000 C CNN
+F 2 "Huellas:AD8232_ECG" H 3600 3600 60  0001 C CNN
+F 3 "" H 3600 3600 60  0000 C CNN
+	1    3100 2750
+	1    0    0    -1  
+$EndComp
+Text Label 4600 2150 2    60   ~ 0
+VDD
+Wire Wire Line
+	6200 2700 6110 2700
+Wire Wire Line
+	5510 2700 5400 2700
+Text Label 6650 2700 2    60   ~ 0
+ADC
+Wire Wire Line
+	8240 2000 7960 2000
+Text Label 7960 2000 0    60   ~ 0
+ADC
+$Comp
+L SW_Push SW?
+U 1 1 59D3071A
+P 9690 -2760
+F 0 "SW?" H 9740 -2660 50  0000 L CNN
+F 1 "SW_Push" H 9690 -2820 50  0000 C CNN
+F 2 "" H 9690 -2560 50  0001 C CNN
+F 3 "" H 9690 -2560 50  0001 C CNN
+	1    9690 -2760
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push SW?
+U 1 1 59D3071B
+P 10790 1810
+F 0 "SW?" H 10840 1910 50  0000 L CNN
+F 1 "RESET_PIC" H 10810 1740 50  0000 C CNN
+F 2 "" H 10790 2010 50  0001 C CNN
+F 3 "" H 10790 2010 50  0001 C CNN
+	1    10790 1810
+	0    -1   -1   0   
+$EndComp
+Text Label 5650 1000 3    60   ~ 0
+VDD
+Wire Notes Line
+	6300 1940 6300 1990
+Wire Notes Line
+	6300 1990 5100 1990
+Text Notes 4080 7260 0    60   ~ 0
+SI, SE PUEDE ENVIAR AL MICRO
+Text Notes 4930 6920 0    60   ~ 0
+ACTUALIZAR CON TODAS LAS SALIDAS
+$EndSCHEMATC
