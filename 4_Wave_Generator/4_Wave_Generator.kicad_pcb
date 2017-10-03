@@ -3699,7 +3699,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 59DCBF62)
-    (at 160.19 35.96)
+    (at 143.87 50.18)
     (descr "Through hole angled pin header, 1x04, 2.54mm pitch, 6mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 2.54mm single row")
     (path /59D306D3)

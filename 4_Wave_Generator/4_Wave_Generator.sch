@@ -478,7 +478,7 @@ U 1 1 59D306C7
 P 8580 6980
 F 0 "J8" V 8540 7040 50  0000 L CNN
 F 1 "Jumper" H 8610 6940 50  0001 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8510 6900 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8510 6900 50  0001 C CNN
 F 3 "" H 8580 6980 50  0000 C CNN
 	1    8580 6980
 	0    1    1    0   
@@ -489,7 +489,7 @@ U 1 1 59D306C8
 P 8580 7080
 F 0 "J9" V 8550 7150 50  0000 L CNN
 F 1 "Jumper" H 8610 7040 50  0001 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8510 7000 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8510 7000 50  0001 C CNN
 F 3 "" H 8580 7080 50  0000 C CNN
 	1    8580 7080
 	0    1    1    0   
@@ -500,7 +500,7 @@ U 1 1 59D306C9
 P 10040 7050
 F 0 "J13" V 10010 7140 50  0000 L CNN
 F 1 "Jumper" H 10070 7010 50  0001 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 9970 6970 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9970 6970 50  0001 C CNN
 F 3 "" H 10040 7050 50  0000 C CNN
 	1    10040 7050
 	0    1    1    0   
@@ -511,7 +511,7 @@ U 1 1 59D306CA
 P 10820 4950
 F 0 "J14" V 10790 5040 50  0000 L CNN
 F 1 "Jumper" H 10850 4910 50  0001 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 10750 4870 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 10750 4870 50  0001 C CNN
 F 3 "" H 10820 4950 50  0000 C CNN
 	1    10820 4950
 	0    1    1    0   
@@ -522,7 +522,7 @@ U 1 1 59D306CB
 P 12310 8850
 F 0 "J15" V 12280 8940 50  0000 L CNN
 F 1 "Jumper" H 12340 8810 50  0001 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 12240 8770 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 12240 8770 50  0001 C CNN
 F 3 "" H 12310 8850 50  0000 C CNN
 	1    12310 8850
 	0    1    1    0   
@@ -533,7 +533,7 @@ U 1 1 59D306CC
 P 8770 5170
 F 0 "J11" V 8740 5240 50  0000 L CNN
 F 1 "Jumper" H 8800 5130 50  0001 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8700 5090 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8700 5090 50  0001 C CNN
 F 3 "" H 8770 5170 50  0000 C CNN
 	1    8770 5170
 	0    1    1    0   
@@ -544,7 +544,7 @@ U 1 1 59D306CD
 P 8770 4990
 F 0 "J10" V 8740 5060 50  0000 L CNN
 F 1 "Jumper" H 8800 4950 50  0001 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8700 4910 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8700 4910 50  0001 C CNN
 F 3 "" H 8770 4990 50  0000 C CNN
 	1    8770 4990
 	0    1    1    0   
@@ -793,7 +793,7 @@ U 1 1 59D306CE
 P 8310 8890
 F 0 "J7" H 8340 8910 50  0000 L CNN
 F 1 "Jumper" H 8340 8850 50  0001 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8240 8810 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8240 8810 50  0001 C CNN
 F 3 "" H 8310 8890 50  0000 C CNN
 	1    8310 8890
 	-1   0    0    1   
@@ -838,7 +838,7 @@ U 1 1 59D306D1
 P 8080 4790
 F 0 "P8" H 8080 4890 50  0000 C CNN
 F 1 "MCLK_EXTERNAL" V 8180 4790 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 8080 4790 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 8080 4790 50  0001 C CNN
 F 3 "" H 8080 4790 50  0000 C CNN
 	1    8080 4790
 	0    -1   -1   0   
@@ -851,7 +851,7 @@ U 1 1 59D306D2
 P 9560 7700
 F 0 "J12" H 9590 7720 50  0000 L CNN
 F 1 "Jumper" H 9590 7660 50  0001 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 9490 7620 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9490 7620 50  0001 C CNN
 F 3 "" H 9560 7700 50  0000 C CNN
 	1    9560 7700
 	1    0    0    -1  
@@ -864,7 +864,7 @@ U 1 1 59D306D3
 P 6130 -940
 F 0 "P6" H 6130 -690 50  0000 C CNN
 F 1 "CONN_01X04" V 6230 -940 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 6130 -940 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 6130 -940 50  0001 C CNN
 F 3 "" H 6130 -940 50  0000 C CNN
 	1    6130 -940
 	0    -1   -1   0   
@@ -885,7 +885,7 @@ U 1 1 59D306D4
 P 6690 -950
 F 0 "P7" H 6690 -700 50  0000 C CNN
 F 1 "CONN_01X04" V 6790 -950 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 6690 -950 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 6690 -950 50  0001 C CNN
 F 3 "" H 6690 -950 50  0000 C CNN
 	1    6690 -950
 	0    -1   -1   0   
@@ -1338,7 +1338,7 @@ U 1 1 59D306E5
 P 13170 -2650
 F 0 "JP3" H 13170 -2570 50  0000 C CNN
 F 1 "J_VDD" H 13180 -2710 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 13170 -2650 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 13170 -2650 50  0001 C CNN
 F 3 "" H 13170 -2650 50  0001 C CNN
 	1    13170 -2650
 	1    0    0    -1  
@@ -1349,7 +1349,7 @@ U 1 1 59D306E6
 P 11140 -2650
 F 0 "JP2" H 11140 -2570 50  0000 C CNN
 F 1 "J_+12V" H 11150 -2710 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 11140 -2650 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 11140 -2650 50  0001 C CNN
 F 3 "" H 11140 -2650 50  0001 C CNN
 	1    11140 -2650
 	1    0    0    -1  
@@ -1496,7 +1496,7 @@ U 1 1 59D306EF
 P 4800 -3060
 F 0 "J3" H 4800 -2910 50  0000 C CNN
 F 1 "SPEAKER" V 4900 -3060 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 4800 -3060 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 4800 -3060 50  0001 C CNN
 F 3 "" H 4800 -3060 50  0001 C CNN
 	1    4800 -3060
 	0    -1   -1   0   
@@ -2474,7 +2474,7 @@ U 1 1 59D3071A
 P 9690 -2760
 F 0 "SW1" H 9740 -2660 50  0000 L CNN
 F 1 "SW_Push" H 9690 -2820 50  0000 C CNN
-F 2 "" H 9690 -2560 50  0001 C CNN
+F 2 "Huellas:KPT_1187B" H 9690 -2560 50  0001 C CNN
 F 3 "" H 9690 -2560 50  0001 C CNN
 	1    9690 -2760
 	1    0    0    -1  
@@ -2485,7 +2485,7 @@ U 1 1 59D3071B
 P 10790 1810
 F 0 "SW2" H 10840 1910 50  0000 L CNN
 F 1 "RESET_PIC" H 10810 1740 50  0000 C CNN
-F 2 "" H 10790 2010 50  0001 C CNN
+F 2 "Huellas:KPT_1187B" H 10790 2010 50  0001 C CNN
 F 3 "" H 10790 2010 50  0001 C CNN
 	1    10790 1810
 	0    -1   -1   0   
