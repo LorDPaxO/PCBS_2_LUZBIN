@@ -2,4 +2,5 @@
   (lib (name Foot_Prints_PCB_OSCILLATOR)(type KiCad)(uri "$(KIPRJMOD)/PCB_OSCILLATOR/Foot_Prints_PCB_OSCILLATOR.pretty")(options "")(descr ""))
   (lib (name Foot_Prints_Manager_Outputs)(type KiCad)(uri "$(KIPRJMOD)/Foot_Prints_Manager_Outputs.pretty")(options "")(descr ""))
   (lib (name Huellas)(type KiCad)(uri C:/Users/USUARIO/Documents/GitHub/Bioimpedanciometro_PCB/Proyecto_Bioimpedanciometro/Huellas.pretty)(options "")(descr ""))
+  (lib (name Logos_Fuentes_Borrador)(type KiCad)(uri C:/Users/USUARIO/Documents/GitHub/Logos_Fuentes_Borrador)(options "")(descr ""))
 )
